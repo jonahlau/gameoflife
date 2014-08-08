@@ -2,7 +2,7 @@ function GameOfLife(width,height) {
   this.width = width;
   this.height = height;
   var intID; //allow access to the intID variable by clearInterval
-  this.intvFuncStart = function() { intID = setInterval(function() {gol.step()}, 100)};
+  this.intvFuncStart = function() { intID = setInterval(function() {gol.step()}, 50)};
   this.stop = function() { clearInterval(intID)};
 };
 
